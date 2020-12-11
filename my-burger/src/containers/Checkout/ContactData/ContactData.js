@@ -6,7 +6,8 @@ import Spinner from '../../../components/UI/Spinner/Spinner'
 import Input from '../../../components/UI/Input/Input'
 import axios from '../../../axios-orders';
 import * as actions from '../../../store/actions/index'
-import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler'
+import withErrorHandler from '../../../hoc/withErrorHandler/withErrorHandler';
+import { chechValidity } from '../../../shared/validation'
 
 class ContactData extends Component {
     state = {
@@ -96,28 +97,7 @@ class ContactData extends Component {
     }
 
 
-    chechValidity(value,rules){
-        let isValid = true;
-        if(rules.required){
-            isValid = value.trim() !== '' && isValid;
-        }
-
-        if(rules.minlength){
-            isValid = value.length >= rules.minlength && isValid;
-        }
-
-        if(rules.maxLength){
-            isValid = value.length <= rules.maxLength && isValid;
-        }
-
-        if(rules.isEmail){
-            const pattern = "^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$";
-            isValid = pattern.test(value) && isValid
-        }
-        
-
-        return isValid;
-    }
+    
 
     orderHandler = (event) =>{
         event.preventDefault()
@@ -143,7 +123,7 @@ class ContactData extends Component {
             ...updatedOrderForm[inputIdentifier]
         }
         updatedFormElement.value = event.target.value;
-        updatedFormElement.valid = this.chechValidity(updatedFormElement.value,updatedFormElement.validation)
+        updatedFormElement.valid = chechValidity(updatedFormElement.value,updatedFormElement.validation)
         updatedFormElement.touched = true;
         updatedOrderForm[inputIdentifier] = updatedFormElement;
         let formIsValid = true;
