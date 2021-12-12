@@ -14,3 +14,5 @@ API.interceptors.request.use((req) => {
 
 export const fetchMessages = () => API.get("/message");
 export const createMessage = (message) => API.post("/message", message);
+export const signin = (userData) => API.post("/user/signin", userData);
+export const signup = (userData) => API.post("/user/signup", userData);
