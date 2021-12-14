@@ -12,8 +12,8 @@ export const signin = async (req, res) => {
       return res.status(404).json({ message: "user not found" });
 
     const isPasswordTrue = await bcrypt.compare(
-      existingUser.password,
-      password
+      password,
+      existingUser.password
     );
 
     if (!isPasswordTrue)
@@ -32,22 +32,22 @@ export const signin = async (req, res) => {
 };
 
 export const signup = async (req, res) => {
-  const { email, password, confirmPassword, firstName, lastName } = req.body;
+  const { email, password, name } = req.body;
 
   try {
     const existingUser = await User.findOne({ email });
     if (existingUser)
       return res.status(400).json({ message: "user already exist" });
 
-    if (confirmPassword != password)
-      return res.status(400).json({ message: "passwords dont match" });
+    // if (confirmPassword != password)
+    //   return res.status(400).json({ message: "passwords dont match" });
 
     const hashedPassword = await bcrypt.hash(password, 12);
 
     const result = User.create({
       email,
       password: hashedPassword,
-      name: `${firstName} ${lastName}`,
+      name: name,
     });
 
     const token = jwt.sign({ email: result.email, id: result._id }, "test", {
