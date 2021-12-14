@@ -12,7 +12,7 @@ export const getMessages = async (req, res) => {
 
 export const createMessage = async (req, res) => {
   const message = req.body;
-
+  console.log(req.body);
   const newMessage = new Message({
     ...message,
     creator: req.userId,
