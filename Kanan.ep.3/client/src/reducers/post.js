@@ -1,13 +1,13 @@
-import { CREATE, GET } from "../consts/actionTypes";
+import { CREATE, FETCH } from "../consts/actionTypes";
 
 export default (posts = [], action) => {
   switch (action.type) {
-    case GET:
+    case FETCH:
       return action.payload;
     case CREATE:
       return [...posts, action.payload];
 
     default:
-      posts;
+      return posts;
   }
 };
