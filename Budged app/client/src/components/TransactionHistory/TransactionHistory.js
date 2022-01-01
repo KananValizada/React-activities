@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./styles.module.css";
+import { useContext } from "react";
+import { GlobalContext } from "../../context/GlobalState";
 
 const TransactionHistory = () => {
+  const { incomes } = useContext(GlobalContext);
+
+  console.log(incomes);
+
   return (
     <div className={classes.history}>
       <div>
