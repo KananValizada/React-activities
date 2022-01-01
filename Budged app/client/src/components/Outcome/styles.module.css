@@ -1,0 +1,30 @@
+.outcome {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.outcomeTitle {
+  color: orange;
+}
+
+.balance {
+  color: white;
+  font-size: 22px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.resultIncome {
+  color: green;
+  margin-right: 25px;
+}
+
+.resultExpence {
+  color: red;
+}

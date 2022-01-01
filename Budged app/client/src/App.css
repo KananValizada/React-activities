@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+  width: 1200px;
+  height: 600px;
+  background-color: #383535;
+  margin: 50px auto;
+  box-shadow: -4px 0px 8px #383535;
+  display: flex;
+}
+
+body {
+  background-color: lightgreen;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Calc {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}

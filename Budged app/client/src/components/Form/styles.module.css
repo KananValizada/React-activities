@@ -1,0 +1,17 @@
+.incomeForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.incomeForm input {
+  background-color: #383535;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-around;
+}
