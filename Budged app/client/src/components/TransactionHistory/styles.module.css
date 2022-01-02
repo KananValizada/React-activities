@@ -3,3 +3,17 @@
   justify-content: space-around;
   color: white;
 }
+
+.incomeList {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  padding: 5px;
+}
+
+.expenseList {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  padding: 5px;
+}

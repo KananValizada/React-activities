@@ -5,22 +5,25 @@ import { GlobalContext } from "../../context/GlobalState";
 const Form = () => {
   const [incomes, setIncomes] = useState({ desc: "", amount: 0 });
   const [expense, setExpense] = useState({ desc: "", amount: 0 });
-  const { addIncome } = useContext(GlobalContext);
+  const { addIncome, addExpense } = useContext(GlobalContext);
 
   const incomeSubmitBtn = (e) => {
     e.preventDefault();
     addIncome(incomes);
+    setIncomes({ desc: "", amount: 0 });
   };
 
   const expenseSubmitBtn = (e) => {
     e.preventDefault();
-    console.log(expense);
+    addExpense(expense);
+    setExpense({ desc: "", amount: 0 });
   };
   return (
     <div className={classes.Form}>
       <form className={classes.incomeForm}>
         <input
           placeholder="Add Income.."
+          value={incomes.desc}
           onChange={(e) => setIncomes({ ...incomes, desc: e.target.value })}
         />
         <input
@@ -44,6 +47,7 @@ const Form = () => {
       <form className={classes.incomeForm}>
         <input
           placeholder="Add Expense.."
+          value={expense.desc}
           onChange={(e) => setExpense({ ...expense, desc: e.target.value })}
         />
         <input
