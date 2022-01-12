@@ -1,0 +1,95 @@
+.profileContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  background-image: url("../../assets/Home/bg.jpg");
+}
+
+.profileParent {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+.profileDetails {
+}
+
+.colz {
+}
+.colzIcon {
+}
+.profileDetailsName {
+  font-size: 24px;
+  font-family: "Poppins-SemiBold";
+}
+.profileDetailsRole {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+
+.profileDetailsRole h1 {
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.primaryText {
+  color: (--white);
+}
+.highlightedText {
+  color: var(--dark-orange);
+}
+.profileRoleTagline {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+  font-family: "Poppins-Light";
+}
+.profileOptions {
+}
+
+.profileOptions .highlightedBtn {
+  margin: 0 0 0 28px;
+}
+.profileOptions .highlightedBtn:hover {
+  margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: #111;
+}
+.btn {
+}
+.profilePicture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 0px 0px var(--white);
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+.profilePictureBack {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../assets/Home/1585599940873.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profilePictureBack:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+
+.colz .colzIcon a {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+}
+
+.colz .colzIcon svg:hover {
+  transform: scale(1.5);
+}

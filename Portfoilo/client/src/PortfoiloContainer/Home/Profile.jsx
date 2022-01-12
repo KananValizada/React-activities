@@ -36,20 +36,20 @@ export default function Profile() {
           </div>
           <div className={classes.profileDetailsName}>Hello I am Kanan</div>
           <div className={classes.profileDetailsRole}>
-            <span className={primariText}>
+            <span className={classes.primaryText}>
               <h1>
                 <Typical
                   loop={Infinity}
-                  steps={
-                    ("Enthusiastic Dev ",
+                  steps={[
+                    "Enthusiastic Dev ",
                     1000,
                     "React/Redux Dev",
                     1000,
                     "Front-End Developer",
                     1000,
                     "MERN Stack Dev",
-                    1000)
-                  }
+                    1000,
+                  ]}
                 />
               </h1>
               <span className={classes.profileRoleTagline}>
