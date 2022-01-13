@@ -93,3 +93,54 @@
 .colz .colzIcon svg:hover {
   transform: scale(1.5);
 }
+
+@media screen and (max-width: 1110px) {
+  .profilePicture {
+    margin: 0 0 0 80px;
+  }
+  .profileDetailsName {
+    font-size: 20px;
+  }
+  .profileDetails .primaryText {
+    font-size: 12px;
+  }
+
+  .profileOptions .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .profilePicture {
+    width: 320px;
+    height: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .profilePicture {
+    margin: 0 !important;
+  }
+  .profileParent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profileOptions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profileDetails {
+    margin: 25px 0 0;
+  }
+  .profileOptions .highlightedBtn {
+    margin: 0 !important;
+  }
+
+  .profileOptions .profileDetailsRole {
+    text-align: center;
+  }
+}

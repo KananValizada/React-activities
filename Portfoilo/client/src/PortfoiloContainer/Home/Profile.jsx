@@ -9,6 +9,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Typical from "react-typical";
+import Particles from "react-particles-js";
 
 export default function Profile() {
   return (
