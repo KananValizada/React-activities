@@ -1,0 +1,89 @@
+.project_button {
+  display: flex;
+}
+.project_button h4 {
+  margin-left: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 12px 24px;
+  transition: 1s;
+}
+.projectContainer__title--active {
+  text-align: center;
+  padding: 12px 24px;
+  background-color: hsl(222, 100%, 95%);
+  color: hsl(243, 80%, 62%);
+}
+.projects_container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.project_width {
+  width: 30%;
+  margin: 33px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.project_box {
+  width: 90%;
+  height: 110px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.5s;
+}
+.project_img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.project_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.blackdrop {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.project_width:hover {
+  transform: scale(1.05);
+}
+.project_box h6 {
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .projects_container {
+    width: 100%;
+  }
+  .project-width {
+    width: 50%;
+  }
+  .project_box {
+    width: 100%;
+  }
+  .project_box h6 {
+    font-size: 15px;
+  }
+  .project_button h4 {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
