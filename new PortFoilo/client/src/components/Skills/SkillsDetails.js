@@ -12,20 +12,14 @@ const SkillsDetails = [
     pathColor: "#f9f871",
   },
   {
-    skillName: "PHP",
+    skillName: "IBM BPM",
     value: 90,
     textColor: "#16c79a",
     pathColor: "#111d5e",
   },
   {
-    skillName: "jQuery",
-    value: 90,
-    textColor: "#16c79a",
-    pathColor: "#845ec2",
-  },
-  {
     skillName: "ReactJS",
-    value: 90,
+    value: 80,
     textColor: "#16c79a",
     pathColor: "#00af91",
   },
@@ -36,30 +30,35 @@ const SkillsDetails = [
     pathColor: "#845ec2",
   },
   {
-    skillName: "Mysql",
-    value: 90,
+    skillName: "Sql",
+    value: 80,
     textColor: "#16c79a",
     pathColor: "#f88f01",
   },
   {
-    skillName: "python",
+    skillName: "jQuery",
     value: 90,
+    textColor: "#16c79a",
+    pathColor: "#845ec2",
+  },
+  {
+    skillName: "node js",
+    value: 60,
     textColor: "#16c79a",
     pathColor: "#fdca40",
   },
   {
-    skillName: "flutter",
-    value: 82,
+    skillName: "C#",
+    value: 70,
     textColor: "#16c79a",
     pathColor: "#1597bb",
   },
   {
-    skillName: "firebase",
-    value: 95,
+    skillName: "mongo db",
+    value: 80,
     textColor: "#16c79a",
     pathColor: "#f58634",
   },
 ];
-
 
 export default SkillsDetails;

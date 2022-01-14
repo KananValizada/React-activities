@@ -37,7 +37,7 @@ const Home = () => {
               className="cv_link"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1kAWFZVULEAD46hbzRG5mj6eisjlw-byx/"
+              href="https://drive.google.com/file/d/1Gpm2mnJ2GSPqSkeoFBgAfC7k2Ob42Dqq/view?usp=sharing"
               style={{ textDecoration: "none" }}
             >
               <div class="snapLeftBtn">

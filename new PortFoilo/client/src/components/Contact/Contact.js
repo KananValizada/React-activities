@@ -7,19 +7,22 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [mssg, setMssg] = useState("");
+  const [mssgResult, setMsgResult] = useState("result-message");
 
   function handleSubmit(e) {
     e.preventDefault();
+
     emailjs
       .sendForm(
-        "service_oodm8ru",
-        "template_gb42tao",
+        "service_ez9furk",
+        "template_hoeave3",
         e.target,
-        "user_A1O9WANaNpuzszrB7uUkh"
+        "user_39n7J6ZIU0blPnJAYJhgJ"
       )
       .then(
         (result) => {
           console.log(result.text);
+          setMsgResult("sent-message");
         },
         (error) => {
           console.log(error.text);
@@ -34,7 +37,12 @@ const Contact = () => {
     <Element id="contact">
       <div className="contact-container" data-aos="fade-up">
         <div className="wrapper centered">
-          <article className="letter" id="sent-letter">
+          <article
+            className={
+              mssgResult == "result-message" ? "letter" : "sent-letter"
+            }
+            id="sent-letter"
+          >
             <form onSubmit={handleSubmit}>
               <div className="side" id="side1">
                 <br />
@@ -82,7 +90,7 @@ const Contact = () => {
           <div id="front"></div>
           <div id="back"></div>
         </div>
-        <p className="result-message" id="sentmsg">
+        <p className={mssgResult} id="sentmsg">
           <i
             class="fa fa-check-circle"
             style={{ color: "green", fontSize: "20px" }}

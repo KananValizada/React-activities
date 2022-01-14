@@ -1,18 +1,16 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 import "./ProjectView.css";
 
 function ProjectView(props) {
   const [chosen, setChosen] = useState(true);
-
-  window.onclick = function(event) {
+  window.onclick = function (event) {
     const modal = document.getElementById("select");
-    if(event.target == modal) 
-    {
+    if (event.target == modal) {
       props.handleChange();
     }
-  }
-  
+  };
+
   const options = {
     buttons: {
       backgroundColor: "rgb(88 73 71 / 80%)",
@@ -28,28 +26,28 @@ function ProjectView(props) {
     settings: {
       overlayColor: "rgb(81 76 73)",
       transitionSpeed: 1000,
-      transitionTimingFunction: "linear"
+      transitionTimingFunction: "linear",
     },
     thumbnails: {
       thumbnailsSize: ["120px", "100px"],
-      thumbnailsOpacity: 0.4
+      thumbnailsOpacity: 0.4,
     },
     caption: {
-      captionColor: "rgba(241, 191, 152, 1)"
+      captionColor: "rgba(241, 191, 152, 1)",
     },
     progressBar: {
       size: "4px",
       backgroundColor: "rgba(255, 237, 225, 1)",
-      fillColor: "#AF9AB2"
-    }
+      fillColor: "#AF9AB2",
+    },
   };
-  
+
   return (
-     
-    <div className={props.display ? "project_view" : "project_views_close"} id="select">
-       
+    <div
+      className={props.display ? "project_view" : "project_views_close"}
+      id="select"
+    >
       <div className="project_view_container">
-     
         <div className="project_view_header">
           <div className="project_view_header_1">
             <div className="project_view_name">{props.title}</div>
@@ -78,7 +76,7 @@ function ProjectView(props) {
             </h5>
           </div>
         </div>
-        
+
         <div className="project_view_body">
           {chosen ? (
             <div>
@@ -86,45 +84,39 @@ function ProjectView(props) {
                 <div className="lang_heading">Used by </div>
                 <div className="dot">:</div>
                 <div className="lang_list">
-                 <p>{props.lang}</p>
+                  <p>{props.lang}</p>
                 </div>
               </div>
               <div className="project_view_desc">
                 <div className="desc_heading">Description</div>
                 <div className="dot">:</div>
                 <div className="desc_list">
-                 <p> {props.desc} </p>
+                  <p> {props.desc} </p>
+                </div>
+              </div>
+              <div className="project_view_desc">
+                <div className="desc_heading">Project URL</div>
+                <div>
+                  <a href={props.url}>{props.url}</a>
                 </div>
               </div>
             </div>
           ) : (
             <SRLWrapper options={options}>
-      
-            <div className="project_view_screenshot" id="style-5">
-             {
-                
-                props.list.map((val, index) => (
-                  
-                 
+              <div className="project_view_screenshot" id="style-5">
+                {props.list.map((val, index) => (
                   <div className="screenshot_container" key={index}>
-                       <a href={val}>
-                
-                         <img src={val} alt="" />
-                        </a>
-                </div>
-            
-            ))
-              
-               }
-             
-            </div>
+                    <a href={val}>
+                      <img src={val} alt="" />
+                    </a>
+                  </div>
+                ))}
+              </div>
             </SRLWrapper>
           )}
         </div>
       </div>
-     
     </div>
-   
   );
 }
 

@@ -15,7 +15,7 @@ const Footer = () => {
           classsName="socia-icon"
           target="_blank"
           rel="noopener noreferrer"
-          href="mailto:karthik190599@gmail.com"
+          href="mailto:kenan.veli@yahoo.com"
         >
           <img src={gmail} alt="" />
         </a>
@@ -23,7 +23,7 @@ const Footer = () => {
           classsName="socia-icon"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/karthik-a-5286a1204/"
+          href="https://www.linkedin.com/in/kenan-velizade-561a94132/"
         >
           <img src={linkedin} alt="" />
         </a>
@@ -31,7 +31,7 @@ const Footer = () => {
           classsName="socia-icon"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/karthick-av/"
+          href="https://github.com/KananValizada/"
         >
           <img src={github} alt="" />
         </a>
@@ -39,7 +39,7 @@ const Footer = () => {
           classsName="socia-icon"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://facebook.com/karthik.av.129/"
+          href="https://www.facebook.com/kenan.velizade.399/"
         >
           <img src={facebook} alt="" />
         </a>
@@ -47,12 +47,12 @@ const Footer = () => {
           classsName="socia-icon"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.instagram.com/karthick_av_/"
+          href="https://www.instagram.com/k.v.zadeh/"
         >
           <img src={instagram} alt="" />
         </a>
       </div>
-      <div className="footer-mail">karthik190599@gmail.com</div>
+      <div className="footer-mail">kenan.veli@yahoo.com</div>
       <div className="footer-nav">
         <Link to="home" smooth={true} duration={900}>
           <h5 className="footer-link">home</h5>

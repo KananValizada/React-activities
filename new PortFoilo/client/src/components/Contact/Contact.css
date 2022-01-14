@@ -16,7 +16,6 @@ p {
 }
 #side1 h1 {
   font-size: 1.5rem;
-
 }
 small {
   display: block;
@@ -45,7 +44,7 @@ textarea {
   resize: none;
   margin-top: 1.9rem;
 }
-#side2{
+#side2 {
   position: relative;
   bottom: 20px;
 }
@@ -58,7 +57,7 @@ input [type="email"]:invalid {
   box-shadow: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgba(240, 132, 114, 0.5)' x='0' y='23' width='10' height='1'/></svg>");
 }
-.error{
+.error {
   box-shadow: none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgba(240, 132, 114, 0.5)' x='0' y='23' width='10' height='1'/></svg>");
 }
@@ -75,8 +74,7 @@ button :focus {
   outline: none;
   transform: scale(1.04);
 }
-#formname
-{
+#formname {
   margin-top: 30px;
 }
 input[type="text"]:focus,
@@ -156,14 +154,14 @@ textarea:focus {
 }
 .envelope.back {
   top: -1rem;
-    width: 10rem;
-    height: 5rem;
-    overflow: hidden;
-    z-index: -9998;
-    opacity: 0;
-    transform: translateY(-6rem);
-    background-color: #ffc867;
-    border-radius: 1rem;
+  width: 10rem;
+  height: 5rem;
+  overflow: hidden;
+  z-index: -9998;
+  opacity: 0;
+  transform: translateY(-6rem);
+  background-color: #ffc867;
+  border-radius: 1rem;
 }
 
 .result-message {
@@ -183,7 +181,6 @@ textarea:focus {
   transform-origin: 0 100%;
   -webkit-animation: closeLetter 2s forwards ease-in;
   animation: closeLetter 2s forwards ease-in;
-  
 }
 .side_1:nth-of-type(2) {
   padding: 2rem;
@@ -297,7 +294,7 @@ textarea:focus {
     width: 6rem;
     height: 3.5rem;
   }
-  .envelope.back{
+  .envelope.back {
     top: -1rem;
     width: 6rem;
     height: 4rem;
@@ -317,6 +314,4 @@ textarea:focus {
   .sent-message {
     top: 50px;
   }
-  
 }
-

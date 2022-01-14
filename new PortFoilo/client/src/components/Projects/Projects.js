@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, Element } from "react-scroll";
 import WebProjects from "./WebProjects";
-import MobileProjects from "./MobileProjects";
 import ProjectUI from "./ProjectUI";
 import "./Projects.css";
 
@@ -32,45 +31,23 @@ const Projects = () => {
               web Projects
             </h4>
           </Link>
-          <Link to="project_scroll" smooth={true} duration={500}>
-            <h4
-              className={
-                !choosen ? "projectContainer__title--active" : undefined
-              }
-              onClick={() => setChoosen(false)}
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              mobile Projects
-            </h4>
-          </Link>
         </div>
       </div>
 
       <div className="projects_container">
-        {choosen
-          ? WebProjects.map((project, index) => (
-              <ProjectUI
-                title={project.title}
-                img={project.img}
-                desc={project.desc}
-                path={project.path}
-                lang={project.lang}
-                list={project.list}
-                key={index}
-              />
-            ))
-          : MobileProjects.map((project, index) => (
-              <ProjectUI
-                title={project.title}
-                img={project.img}
-                desc={project.desc}
-                path={project.path}
-                lang={project.lang}
-                list={project.list}
-                key={index}
-              />
-            ))}
+        {choosen &&
+          WebProjects.map((project, index) => (
+            <ProjectUI
+              title={project.title}
+              img={project.img}
+              desc={project.desc}
+              path={project.path}
+              lang={project.lang}
+              list={project.list}
+              key={index}
+              url={project.url}
+            />
+          ))}
       </div>
     </Element>
   );
