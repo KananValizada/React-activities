@@ -36,8 +36,8 @@ const SkillsDetails = [
     pathColor: "#f88f01",
   },
   {
-    skillName: "jQuery",
-    value: 90,
+    skillName: "Typescript",
+    value: 85,
     textColor: "#16c79a",
     pathColor: "#845ec2",
   },
