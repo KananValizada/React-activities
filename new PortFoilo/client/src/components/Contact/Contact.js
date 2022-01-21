@@ -46,7 +46,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit}>
               <div className="side" id="side1">
                 <br />
-                <h1>Contact us</h1>
+                <h1>Contact me</h1>
                 <p>
                   <input
                     type="text"

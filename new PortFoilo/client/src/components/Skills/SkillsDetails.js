@@ -37,7 +37,7 @@ const SkillsDetails = [
   },
   {
     skillName: "Typescript",
-    value: 85,
+    value: 70,
     textColor: "#16c79a",
     pathColor: "#845ec2",
   },
@@ -49,7 +49,7 @@ const SkillsDetails = [
   },
   {
     skillName: "C#",
-    value: 70,
+    value: 40,
     textColor: "#16c79a",
     pathColor: "#1597bb",
   },
