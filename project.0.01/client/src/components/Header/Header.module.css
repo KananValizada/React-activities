@@ -1,0 +1,12 @@
+.headerImage {
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+  position: absolute;
+  transform: translate(0, -18%);
+  z-index: -1;
+}
+
+.headerImage img {
+  width: 100%;
+}
