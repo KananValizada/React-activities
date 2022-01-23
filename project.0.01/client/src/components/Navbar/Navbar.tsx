@@ -25,6 +25,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import BeenhereIcon from '@mui/icons-material/Beenhere';
 
 const drawerWidth = 240;
 
@@ -59,10 +60,12 @@ const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
+      
     }),
     ...(open && {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: `${drawerWidth}px`,
+      background:"transparent",
       transition: theme.transitions.create(['margin', 'width'], {
         easing: theme.transitions.easing.easeOut,
         duration: theme.transitions.duration.enteringScreen,
@@ -211,12 +214,12 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            <BeenhereIcon /> Challange Me
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className={classes.NavbarMenu}>
           <Button

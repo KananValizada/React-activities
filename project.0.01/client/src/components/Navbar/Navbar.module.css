@@ -1,8 +1,8 @@
 .NavbarMenu {
-  width: 85%;
+  width: 75%;
   justify-content: right;
 }
 
 .Navbar {
-  background: transparent;
+  background: transparent !important;
 }

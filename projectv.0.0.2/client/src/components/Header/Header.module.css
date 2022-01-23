@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 80px 0 80px;
+  align-items: flex-start;
+  line-height: 1;
+}
+.headerTitle {
+  background-color: #8858ed;
+  padding: 30px 100px 30px 60px;
+  box-shadow: -1px -1px 20px 7px #000000;
+  border-radius: 20px;
+  text-align: left;
+  color: white;
+}
+.headerTitle h1 {
+  font-size: 54px;
+}
+
+.headerTitle p {
+  font-size: 22px;
+}
+
+.headerButton {
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #8858ed;
+  font-size: 25px;
+  outline: none;
+  border: 1px solid #8858ed;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.headerButton:hover {
+  background-color: #8858ed;
+  border: 1px solid white;
+  color: white;
+}
+
+.headerImg {
+  background-image: url("../../assets//pingpong2.jpg");
+  width: 500px;
+  height: 760px;
+  border-radius: 35px;
+  position: absolute;
+  right: 80px;
+  top: 225px;
+  background-size: cover;
+  box-shadow: -1px -1px 20px 7px #000000;
+}

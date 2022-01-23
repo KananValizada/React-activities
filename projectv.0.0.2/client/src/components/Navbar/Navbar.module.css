@@ -1,0 +1,30 @@
+.Navbar {
+  background-color: #24183c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+.NavbarLogo {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+
+.NavbarMenu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavbarMenu li {
+  margin-left: 15px;
+  cursor: pointer;
+  transition: color 0.5s;
+  font-size: 18px;
+}
+
+.NavbarMenu li:hover {
+  color: #9c7ce6;
+}

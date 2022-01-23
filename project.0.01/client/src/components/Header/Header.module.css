@@ -2,11 +2,30 @@
   width: 100%;
   overflow: hidden;
   height: 500px;
-  position: absolute;
+  position: relative;
   transform: translate(0, -18%);
   z-index: -1;
+  background-color: rgb(0 0 220 / 41%);
+  background-image: url("../../assets/header3.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
 }
 
 .headerImage img {
   width: 100%;
+  opacity: 0.7;
+}
+
+.headerWriting {
+  position: relative;
+  z-index: 10;
+  top: -100%;
+}
+
+.headerQuote {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
 }
