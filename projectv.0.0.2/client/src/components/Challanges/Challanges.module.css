@@ -1,0 +1,115 @@
+.challanges {
+  background-color: #060506;
+  padding: 120px 80px 120px 80px;
+}
+
+.challangesHeader {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.challangesHeader button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  color: #8858ed;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.challangesHeader button:hover {
+  background-color: #8858ed;
+  border: 1px solid white;
+  color: white;
+}
+
+.challengeSlideItem {
+  margin-left: 25px;
+}
+
+.challengeSlideImg {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../assets/pingpong4.png");
+  background-size: 400px 400px;
+  background-position: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.challengeSlideImg:hover {
+  background-size: 500px 500px;
+}
+
+.challengeSlideImg2 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../assets/chess.png");
+  background-size: 400px 400px;
+  background-position: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.challengeSlideImg2:hover {
+  background-size: 500px 500px;
+}
+
+.challengeSlideImg3 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../assets/camera.png");
+  background-size: 200px 200px;
+  background-position: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.challengeSlideImg3:hover {
+  background-size: 300px 300px;
+}
+
+.challengeSlideImgBack {
+  background-color: #070718;
+  width: fit-content;
+}
+
+.slickNext:before {
+  content: "\276F" !important;
+}
+.slickPrev::before {
+  content: "\276E" !important;
+}
+
+.challengeSlideContent {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+  color: white;
+}
+.challengeSlideContent button {
+  padding: 5px 70px;
+  background-color: rgb(136, 88, 237);
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+.challengeSlideContent span {
+  font-weight: 500;
+}
+
+.challengeSlideContent button:hover {
+  background-color: #50348a;
+}
