@@ -1,0 +1,21 @@
+.suggestBtn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid white;
+  cursor: pointer;
+  color: #8858ed;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.suggestBtn:hover {
+  background-color: #8858ed;
+  border: 1px solid white;
+  color: white;
+}
+
+.sugestText {
+  font-size: 24px;
+  line-height: 1;
+}
