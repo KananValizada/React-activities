@@ -10,6 +10,11 @@
 .NavbarLogo {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
+  list-style: none;
+  text-decoration: none;
+}
+.NavbarLogo:active {
+  color: #9c7ce6;
 }
 
 .NavbarMenu {

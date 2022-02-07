@@ -1,0 +1,127 @@
+.challangeItem {
+  margin: 20px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.challangeItemDescPage {
+  display: flex;
+  justify-content: right;
+}
+
+.challangeItemDescPage1 {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.challangeItemDescPage2 {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.challangeItemDescPage2:hover,
+.challangeItemDescPage1:hover {
+  color: #ededed9d;
+}
+
+.challangeItemInfo {
+  width: 45%;
+}
+.challangeItemDesc {
+  width: 45%;
+}
+
+.challangeItemInfoImg img {
+  width: 450px;
+}
+
+.challangeItemDescPageTitle {
+  text-align: left;
+}
+
+.challangeItemInfoNavActive {
+  background: none;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.challangeItemInfoNavPassive {
+  background: none;
+  color: gray;
+  outline: none;
+  border: none;
+}
+
+.challangeItemButton {
+  padding: 10px 30px;
+  border-radius: 20px;
+  width: 100%;
+  color: white;
+  background-color: #8858ed;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #8858ed;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.challangeItemButton:hover {
+  background-color: #8758ed8c;
+  border: 1px solid #8758ed8c;
+}
+
+.participantsCont {
+  color: white;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.participants {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.participantsItem {
+  width: 27%;
+  display: flex;
+  background-color: #8858ed;
+  align-items: center;
+  border-radius: 25px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.participantsItem h4 {
+  margin-right: 15px;
+}
+
+.participantsItem:hover {
+  color: #060506;
+  background-color: white;
+}
+
+.userImg {
+  min-width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../../assets/logo1.jpg");
+}
+
+.userImg2 {
+  min-width: 70px;
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../../assets/logo2.jpg");
+}

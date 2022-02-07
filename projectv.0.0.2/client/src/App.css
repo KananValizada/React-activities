@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  height: 100vw;
+  /* height: 100vw; */
+  background-color: #060506;
 }
 
 .App-logo {
@@ -36,4 +37,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.accordion {
+  transform: translateX(-20px);
+}
+
+.accordion__button {
+  background-color: #060506 !important;
+  color: white !important;
+  transition: all 0.3s;
+}
+.accordion__button:hover {
+  color: #ededed9d !important;
 }

@@ -30,6 +30,7 @@
 
 .challengeSlideItem {
   margin-left: 25px;
+  text-decoration: none;
 }
 
 .challengeSlideImg {
@@ -96,7 +97,7 @@
   align-items: center;
   color: white;
 }
-.challengeSlideContent button {
+.challengeSlideContent a {
   padding: 5px 70px;
   background-color: rgb(136, 88, 237);
   color: white;
@@ -105,11 +106,12 @@
   transition: all 0.5s;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .challengeSlideContent span {
   font-weight: 500;
 }
 
-.challengeSlideContent button:hover {
+.challengeSlideContent a:hover {
   background-color: #50348a;
 }

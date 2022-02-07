@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Challanges.module.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -54,7 +55,7 @@ const Challanges = () => {
               <br />
               <span>10 AZN</span>
             </h4>
-            <button>Daha ətraflı</button>
+            <Link to="/challanges/1">Daha ətraflı</Link>
           </div>
         </div>
         <div className={classes.challengeSlideItem}>
