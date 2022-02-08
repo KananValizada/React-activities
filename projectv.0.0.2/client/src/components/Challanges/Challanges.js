@@ -40,7 +40,9 @@ const Challanges = () => {
     <div className={classes.challanges}>
       <div className={classes.challangesHeader}>
         <h1>AKTİV TURNİRLƏR</h1>
-        <button>Hamısına bax</button>
+        <Link to="/challanges">
+          <button>Hamısına bax</button>
+        </Link>
       </div>
       <Slider {...settings}>
         <div className={classes.challengeSlideItem}>
@@ -70,7 +72,7 @@ const Challanges = () => {
               <br />
               <span>5 AZN</span>
             </h4>
-            <button>Daha ətraflı</button>
+            <Link to="/challanges/1">Daha ətraflı</Link>
           </div>
         </div>
         <div className={classes.challengeSlideItem}>
@@ -85,7 +87,7 @@ const Challanges = () => {
               <br />
               <span>10 AZN</span>
             </h4>
-            <button>Daha ətraflı</button>
+            <Link to="/challanges/1">Daha ətraflı</Link>
           </div>
         </div>
         <div className={classes.challengeSlideItem}>
@@ -100,7 +102,7 @@ const Challanges = () => {
               <br />
               <span>10 AZN</span>
             </h4>
-            <button>Daha ətraflı</button>
+            <Link to="/challanges/1">Daha ətraflı</Link>
           </div>
         </div>
         <div>

@@ -1,0 +1,95 @@
+.allChallanges {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0 auto;
+  padding: 20px 80px;
+  text-align: left;
+}
+.allChallangesMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.allChallangesMainFilter {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.allChallangesMainItems {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.allChallangesMainItemsSort {
+  margin-bottom: 25px;
+  align-self: flex-end;
+  background-color: #060506;
+  outline: #060506;
+}
+
+.allChallangesMainItemsSort select {
+  background-color: #060506;
+  color: white;
+}
+
+.allChallangesMainItemsList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.challengeSlideItem {
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.challengeSlideImg {
+  width: 400px;
+  height: 400px;
+  background-image: url("https://toppng.com/uploads/preview/ping-pong-115309597924wnmwhokuc.png");
+  background-size: 400px 400px;
+  background-position: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.challengeSlideImg:hover {
+  background-size: 500px 500px;
+}
+
+.challengeSlideImgBack {
+  background-color: #070718;
+  width: fit-content;
+}
+
+.challengeSlideContent {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+  color: white;
+}
+.challengeSlideContent a {
+  padding: 5px 70px;
+  background-color: rgb(136, 88, 237);
+  color: white;
+  font-weight: 700;
+  border-radius: 25px;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.challengeSlideContent span {
+  font-weight: 500;
+}
+
+.challengeSlideContent a:hover {
+  background-color: #50348a;
+}

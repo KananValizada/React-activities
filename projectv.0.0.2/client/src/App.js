@@ -6,6 +6,7 @@ import Suggest from "./components/Suggest/Suggest";
 import ChallangesItem from "./components/Challanges/ChallangesItem/ChallangesItem";
 import { Routes, Route } from "react-router";
 import Transition from "./components/HOC/Transition";
+import AllChallanges from "./components/Challanges/AllChallanges/AllChallanges";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           />
 
           <Route path="/challanges/:id" element={<ChallangesItem />} />
+          <Route path="/challanges" element={<AllChallanges />} />
         </Routes>
       </Transition>
     </div>
